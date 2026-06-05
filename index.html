@@ -94,7 +94,6 @@
 html{scroll-behavior:smooth}
 body{background:var(--cream);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden}
 
-/* Keyboard Accessibility Focus States */
 a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 3px;
@@ -186,7 +185,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:62px;padding:0 48px;d
 .features-inner{max-width:1060px;margin:0 auto}
 .features .sec-sub{margin-bottom:56px}
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--cream3);border:2px solid var(--cream3);border-radius:14px;overflow:hidden}
-.feat{background:var(--cream);padding:36px 28px;transition:transform 0.25s, background-color 0.25s, box-shadow 0.25s}
+.feat { background:var(--cream); padding:36px 28px; transition:transform 0.25s, background-color 0.25s, box-shadow 0.25s; }
 .feat:hover{background:var(--white);transform:translateY(-3px);box-shadow:0 16px 48px rgba(0,0,0,0.07);z-index:1;position:relative}
 .feat-num{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:var(--cream3);line-height:1;margin-bottom:-6px}
 .feat-icon{font-size:24px;margin-bottom:12px;display:block}
@@ -380,7 +379,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
 
 @media(max-width:480px){
   .h-num{flex:1 1 100%}
-  .f-links{grid-template-columns:1fr}
+  .f-links{grid-template-columns:repeat(2, 1fr)}
 }
 </style>
 </head>
@@ -396,8 +395,8 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
     <a href="#pricing">Pricing</a>
     <a href="#roadmap">Roadmap</a>
     <a href="#faq">FAQ</a>
-    <a href="https://app.wissely.com/auth" class="nav-login-link">Login</a>
-    <a href="https://app.wissely.com/auth" class="nav-btn">Start Free Trial</a>
+    <a href="https://app.wissely.com/auth?mode=login" class="nav-login-link">Login</a>
+    <a href="https://app.wissely.com/auth?mode=register" class="nav-btn">Start Free Trial</a>
   </div>
   <button class="hamburger" onclick="toggleNav()" aria-label="Open menu" aria-expanded="false" id="menuToggle">
     <span></span><span></span><span></span>
@@ -409,8 +408,8 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
   <a href="#pricing" onclick="toggleNav()" role="menuitem">Pricing</a>
   <a href="#roadmap" onclick="toggleNav()" role="menuitem">Roadmap</a>
   <a href="#faq" onclick="toggleNav()" role="menuitem">FAQ</a>
-  <a href="https://app.wissely.com/auth" onclick="toggleNav()" role="menuitem" class="mob-login-btn">Login</a>
-  <a href="https://app.wissely.com/auth" onclick="toggleNav()" role="menuitem" class="mob-cta-btn">Start Free Trial</a>
+  <a href="https://app.wissely.com/auth?mode=login" onclick="toggleNav()" role="menuitem" class="mob-login-btn">Login</a>
+  <a href="https://app.wissely.com/auth?mode=register" onclick="toggleNav()" role="menuitem" class="mob-cta-btn">Start Free Trial</a>
 </div>
 
 <header class="hero">
@@ -426,7 +425,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
   
   <div class="hero-btns-wrapper">
     <div class="hero-btns">
-      <a href="https://app.wissely.com/auth" class="btn-gold" id="hero-cta">Start Free Trial</a>
+      <a href="https://app.wissely.com/auth?mode=register" class="btn-gold" id="hero-cta">Start Free Trial</a>
       <a href="#features" class="btn-outline">See how it works</a>
     </div>
     <div class="cta-reassurance">No credit card required. Cancel anytime. Includes all 6 AI tools and 20 analyses.</div>
@@ -601,7 +600,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
             <li>Privacy-focused platform</li>
           </ul>
           <div>
-            <a href="https://app.wissely.com/auth" class="p-btn p-btn-dark" id="pricing-starter-cta">Start Free Trial</a>
+            <a href="https://app.wissely.com/auth?mode=register" class="p-btn p-btn-dark" id="pricing-starter-cta">Start Free Trial</a>
             <span class="p-card-reassurance">No credit card required. Cancel anytime.</span>
           </div>
         </section>
@@ -622,7 +621,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
             <li>Early access to new features</li>
           </ul>
           <div>
-            <a href="https://app.wissely.com/auth" class="p-btn p-btn-gold" id="pricing-growth-cta">Start Free Trial</a>
+            <a href="https://app.wissely.com/auth?mode=register" class="p-btn p-btn-gold" id="pricing-growth-cta">Start Free Trial</a>
             <span class="p-card-reassurance">No credit card required. Cancel anytime.</span>
           </div>
         </section>
@@ -642,7 +641,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
             <li>SLA framework</li>
           </ul>
           <div>
-            <a href="https://app.wissely.com/auth" class="p-btn p-btn-dark" id="pricing-pro-cta">Start Free Trial</a>
+            <a href="https://app.wissely.com/auth?mode=register" class="p-btn p-btn-dark" id="pricing-pro-cta">Start Free Trial</a>
             <span class="p-card-reassurance">No credit card required. Cancel anytime.</span>
           </div>
         </section>
@@ -728,7 +727,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
       </div>
       <p class="cta-reassurance" style="color:rgba(255,255,255,0.6); margin-bottom:12px;">Designed for modern businesses worldwide.</p>
       <div class="early-cta-wrapper">
-        <a href="https://app.wissely.com/auth" class="btn-gold">Start Free Trial</a>
+        <a href="https://app.wissely.com/auth?mode=register" class="btn-gold">Start Free Trial</a>
         <div class="cta-reassurance" style="margin-top:10px; color:rgba(255,255,255,0.5);">No credit card required. Cancel anytime.</div>
       </div>
     </div>
@@ -751,7 +750,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
           <div class="privacy-desc">Wissely uses commercial AI providers that offer privacy protections designed to limit the use of customer data for model training.</div>
         </div>
         <div class="privacy-card">
-          <span class="privacy-icon" role="img" aria-label="Shield icon">🛡️</span>
+          <span class="privacy-icon" role="img" aria-label="Secure transmission icon">🛡️</span>
           <h3 class="privacy-title">Secure Transmission</h3>
           <div class="privacy-desc">Data is transmitted using modern security protocols designed to protect information during transfer.</div>
         </div>
@@ -810,7 +809,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
       <p style="margin-bottom: 12px;">Designed for modern businesses worldwide.</p>
       <p>Try Wissely free for 14 days. Includes all 6 AI tools and 20 analyses. Cancel anytime.</p>
       <div class="cta-wrapper">
-        <a href="https://app.wissely.com/auth" class="btn-gold" id="footer-cta">Start Free Trial</a>
+        <a href="https://app.wissely.com/auth?mode=register" class="btn-gold" id="footer-cta">Start Free Trial</a>
       </div>
       <div class="cta-reassurance" style="color: rgba(255,255,255,0.5);">No credit card required. Cancel anytime.</div>
     </div>
@@ -828,8 +827,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;j
     <a href="contact.html">Contact</a> 
   </div>
   <div class="f-copy-container">
-    <div class="f-copy">© 2026 Wissely</div>
-    <div class="f-origin">Built in Sri Lanka. Serving businesses worldwide.</div>
+    <div class="f-copy">© 2026 Wissely • Designed for modern businesses worldwide.</div>
   </div>
 </footer>
 
@@ -858,12 +856,10 @@ function closeMenuOutside(event) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Inject reveal targets cleanly before attaching the observer
   document.querySelectorAll('.feat, .p-card, .vs-col, .faq-item, .rm-col, .privacy-card, .early-card').forEach(el => {
     el.classList.add('reveal');
   });
 
-  // Navigation scrolling logic
   document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
       e.preventDefault();
@@ -875,7 +871,6 @@ document.addEventListener("DOMContentLoaded", () => {
           block: "start"
         });
       }
-      // Guarantee menu state closes on action
       const nav = document.getElementById('mobNav');
       const toggle = document.getElementById('menuToggle');
       if(nav.classList.contains('open')) {
@@ -886,7 +881,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Reveal animations initialization securely optimized via IntersectionObserver
   const revealElements = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
