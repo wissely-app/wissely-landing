@@ -1,100 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy | Wissely</title>
-
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy · Wissely</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-body{
-    font-family:Arial,sans-serif;
-    max-width:900px;
-    margin:0 auto;
-    padding:40px 20px;
-    line-height:1.7;
-    color:#222;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0c0c0a;
+  --ink2:#1a1a14;
+  --sage:#2d4a3e;
+  --sage2:#3d6b58;
+  --gold:#c9a84c;
+  --gold2:#e8c97a;
+  --cream:#f8f6f0;
+  --cream2:#ede9df;
+  --cream3:#dedad0;
+  --text:#2a2a20;
+  --muted:#7a7a66;
+  --white:#fefefc;
 }
-h1,h2{
-    color:#2d4a3e;
-}
-a{
-    color:#2d4a3e;
+body{background:var(--cream);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7;padding-top:62px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:62px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,246,240,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--cream3)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:30px;height:30px;background:var(--sage);border-radius:7px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:700;color:var(--gold2)}
+.logo-text{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;color:var(--ink)}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:13px;color:var(--muted);text-decoration:none;transition:color 0.15s}
+.nav-links a:hover{color:var(--ink)}
+.legal-header{background:var(--ink);padding:80px 48px 60px;color:var(--white);position:relative}
+.legal-inner{max-width:760px;margin:0 auto}
+.eyebrow{font-size:10px;font-family:'DM Mono',monospace;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;color:var(--gold)}
+.legal-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,48px);font-weight:600;letter-spacing:-1px;line-height:1.1}
+.last-updated{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);margin-top:16px;text-transform:uppercase;letter-spacing:1px}
+.legal-content{padding:60px 48px;background:var(--cream)}
+.legal-content h2{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--ink);margin:32px 0 12px;letter-spacing:-0.5px}
+.legal-content h2:first-child{margin-top:0}
+.legal-content p{font-size:14px;color:var(--text);margin-bottom:16px;opacity:0.9}
+.legal-content ul{margin-bottom:20px;padding-left:20px;font-size:14px;color:var(--text);opacity:0.9}
+.legal-content li{margin-bottom:8px}
+.callout{background:var(--cream2);border-left:3px solid var(--sage);padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0}
+.callout p{margin-bottom:0;font-style:italic}
+footer{background:var(--ink);padding:26px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;border-top:1px solid rgba(255,255,255,0.04)}
+.f-logo{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:rgba(255,255,255,0.25);letter-spacing:-0.5px}
+.f-logo span{color:var(--gold)}
+.f-links{display:flex;gap:20px}
+.f-links a{font-size:11px;color:rgba(255,255,255,0.18);text-decoration:none;font-family:'DM Mono',monospace;letter-spacing:0.8px;transition:color 0.15s}
+.f-links a:hover{color:rgba(255,255,255,0.45)}
+.f-copy{font-size:10px;color:rgba(255,255,255,0.1);font-family:'DM Mono',monospace}
+@media(max-width:768px){
+  nav, .legal-header, .legal-content, footer{padding-left:22px;padding-right:22px}
+  footer{flex-direction:column;align-items:flex-start}
 }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-mark">W</div>
+    <div class="logo-text">Wissely</div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Back to Home</a>
+  </div>
+</nav>
 
-<p>Last Updated: June 2026</p>
+<header class="legal-header">
+  <div class="legal-inner">
+    <div class="eyebrow">Compliance Documentation</div>
+    <h1>Privacy Policy</h1>
+    <div class="last-updated">Last Updated: June 4, 2026</div>
+  </div>
+</header>
 
-<p>
-Wissely ("we", "our", or "us") provides AI-powered financial analysis tools
-for businesses. This Privacy Policy explains what information we collect,
-how we use it, and your rights regarding your data.
-</p>
+<main class="legal-content">
+  <div class="legal-inner">
+    <p>Wissely ("we," "our," or "us") operates the financial intelligence platform hosted at wissely.com and app.wissely.com. This Privacy Policy details how we handle information in connection with our services, maintaining compliance with global frameworks including the General Data Protection Regulation (GDPR) and industry merchant-of-record standards required by Paddle.</p>
 
-<h2>Information We Collect</h2>
+    <h2>1. Information We Collect</h2>
+    <p>To provide clear financial insights, we process limited scopes of personal data classified into two categories:</p>
+    <ul>
+      <li><strong>Account Data:</strong> Email address, identity details, and structural business descriptors provided during registry setup.</li>
+      <li><strong>Billing Data:</strong> Transaction records, subscription records, and regional location markers. Financial transactions are secured and completely handled via our payment provider, Paddle. We do not store credit card entries directly on our local servers.</li>
+    </ul>
 
-<p>We may collect:</p>
+    <h2>2. How We Use Information</h2>
+    <p>We process account configurations and administrative metadata strictly to execute functional software duties, including:</p>
+    <ul>
+      <li>Authenticating system access protocols and running internal database profiles.</li>
+      <li>Transmitting mandatory infrastructure warnings, service revisions, or updates.</li>
+      <li>Preventing malicious attempts at platform subversion, automated parsing abuse, or localized breaches.</li>
+    </ul>
 
-<ul>
-<li>Account information such as email address.</li>
-<li>Financial information submitted for analysis.</li>
-<li>Usage and diagnostic information.</li>
-<li>Subscription and billing information.</li>
-</ul>
+    <h2>3. AI Processing Disclosure & Zero Data Retention</h2>
+    <p>Wissely operates under a strict Zero Data Retention model for operational payloads:</p>
+    <div class="callout">
+      <p><strong>Strict Payload Ephemerality:</strong> Any user-submitted financial items—such as pasted invoice blocks, text logs, or spreadsheet text—are passed to enterprise AI layer APIs through secure transport pathways. This contents data is processed in real time and erased immediately following message analysis generation. It is never stored inside our static databases.</p>
+    </div>
+    <p>We mandate commercial data privacy layers via our AI API suppliers. Your operational uploads are never retained by third-party APIs and are strictly barred from being used to train LLMs or base machine intelligence layers.</p>
 
-<h2>How We Use Information</h2>
+    <h2>4. Cookies</h2>
+    <p>We use essential cookies and stateless localized session mechanisms to keep account access open securely across your browser sessions. No cross-site profiling trackers, advertising cookies, or behavior-marketing scripts run natively within our system tools.</p>
 
-<ul>
-<li>Provide and improve the Wissely platform.</li>
-<li>Generate financial analyses requested by users.</li>
-<li>Provide customer support.</li>
-<li>Maintain security and prevent abuse.</li>
-<li>Comply with legal obligations.</li>
-</ul>
+    <h2>5. Data Retention</h2>
+    <p>Account configuration properties, profile parameters, and ledger tallies stay preserved as active properties as long as your system deployment account continues in good standing. If you delete your account, this configuration profile metadata will be fully purged within 30 days.</p>
 
-<h2>Data Security</h2>
+    <h2>6. Data Security</h2>
+    <p>We apply enterprise-grade technical safeguards to keep parameters safe. All communication pipelines operate via forced TLS transport protocols over HTTP. Long-term configurations sit inside segmented networks guarded by persistent firewalls, with standard AES-256 asset encryption active at rest.</p>
 
-<p>
-We use industry-standard security measures to protect user information.
-Data is transmitted using encrypted connections.
-</p>
+    <h2>7. User Rights & GDPR Compliance</h2>
+    <p>Pursuant to European GDPR frameworks and cross-border data conventions, global users hold explicit system access protections. You have the right to request access to, correction of, or permanent deletion of your profile account data. To invoke any data rights, submit your query to our compliance desk directly at the address below.</p>
 
-<h2>AI Processing</h2>
+    <h2>8. Contact Information</h2>
+    <p>For questions or requests regarding your data, contact us at:</p>
+    <p>Email: <a href="mailto:support@wissely.com" style="color:var(--sage); font-weight:500;">support@wissely.com</a></p>
+  </div>
+</main>
 
-<p>
-Information submitted to Wissely may be processed by third-party AI providers
-solely to generate requested analyses. User data is not intentionally used
-to train public AI models.
-</p>
-
-<h2>Data Retention</h2>
-
-<p>
-We retain information only as long as necessary to provide services,
-comply with legal obligations, and maintain account functionality.
-</p>
-
-<h2>Your Rights</h2>
-
-<p>
-You may request access, correction, or deletion of your personal information
-by contacting us.
-</p>
-
-<h2>Contact</h2>
-
-<p>
-Questions regarding this Privacy Policy may be sent to:
-<br><br>
-support@wissely.com
-</p>
-
-<p>
-<a href="/">Return to Wissely</a>
-</p>
+<footer>
+  <div class="f-logo">Wisse<span>ly</span></div>
+  <div class="f-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="security.html">Data & Security</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="f-copy">© 2026 Wissely</div>
+</footer>
 
 </body>
 </html>
