@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Data & Security · Wissely</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0c0c0a;
+  --ink2:#1a1a14;
+  --sage:#2d4a3e;
+  --sage2:#3d6b58;
+  --gold:#c9a84c;
+  --gold2:#e8c97a;
+  --cream:#f8f6f0;
+  --cream2:#ede9df;
+  --cream3:#dedad0;
+  --text:#2a2a20;
+  --muted:#7a7a66;
+  --white:#fefefc;
+}
+body{background:var(--cream);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7;padding-top:62px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:62px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,246,240,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--cream3)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:30px;height:30px;background:var(--sage);border-radius:7px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:700;color:var(--gold2)}
+.logo-text{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;color:var(--ink)}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:13px;color:var(--muted);text-decoration:none;transition:color 0.15s}
+.nav-links a:hover{color:var(--ink)}
+.legal-header{background:var(--ink);padding:80px 48px 60px;color:var(--white);position:relative}
+.legal-inner{max-width:760px;margin:0 auto}
+.eyebrow{font-size:10px;font-family:'DM Mono',monospace;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;color:var(--gold)}
+.legal-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,48px);font-weight:600;letter-spacing:-1px;line-height:1.1}
+.last-updated{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);margin-top:16px;text-transform:uppercase;letter-spacing:1px}
+.legal-content{padding:60px 48px;background:var(--cream)}
+.legal-content h2{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--ink);margin:32px 0 12px;letter-spacing:-0.5px}
+.legal-content h2:first-child{margin-top:0}
+.legal-content p{font-size:14px;color:var(--text);margin-bottom:16px;opacity:0.9}
+.legal-content ul{margin-bottom:20px;padding-left:20px;font-size:14px;color:var(--text);opacity:0.9}
+.legal-content li{margin-bottom:8px}
+.callout{background:var(--cream2);border-left:3px solid var(--sage);padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0}
+.callout p{margin-bottom:0;font-style:italic}
+footer{background:var(--ink);padding:26px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;border-top:1px solid rgba(255,255,255,0.04)}
+.f-logo{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:rgba(255,255,255,0.25);letter-spacing:-0.5px}
+.f-logo span{color:var(--gold)}
+.f-links{display:flex;gap:20px}
+.f-links a{font-size:11px;color:rgba(255,255,255,0.18);text-decoration:none;font-family:'DM Mono',monospace;letter-spacing:0.8px;transition:color 0.15s}
+.f-links a:hover{color:rgba(255,255,255,0.45)}
+.f-copy{font-size:10px;color:rgba(255,255,255,0.1);font-family:'DM Mono',monospace}
+@media(max-width:768px){
+  nav, .legal-header, .legal-content, footer{padding-left:22px;padding-right:22px}
+  footer{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
 
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-mark">W</div>
+    <div class="logo-text">Wissely</div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Back to Home</a>
+  </div>
+</nav>
+
+<header class="legal-header">
+  <div class="legal-inner">
+    <div class="eyebrow">Data Protection</div>
+    <h1>Data & Security</h1>
+    <div class="last-updated">Last Updated: June 5, 2026</div>
+  </div>
+</header>
+
+<main class="legal-content">
+  <div class="legal-inner">
+    <p>At Wissely, we recognize that our users entrust us with business text records and financial summaries. We maintain appropriate administrative and technical measures designed to safeguard your information against unauthorized access, modification, or disclosure.</p>
+
+    <h2>1. Infrastructure & Storage</h2>
+    <p>Our platform services and operational databases are hosted on secure cloud infrastructure. This hosting environment employs logical isolation protocols, automated network firewall monitoring, and regular vulnerability scanning to minimize unauthorized perimeter access points.</p>
+    <p>All database configurations utilize standard industry encryption mechanisms for data at rest and data in transit to provide baseline protection for stored parameters and account structures.</p>
+
+    <h2>2. AI API Processing & Training Policies</h2>
+    <p>To deliver financial summarization tools, text submissions are programmatically processed through designated application programming interfaces (APIs). Wissely uses commercial AI providers that do not use customer data for model training where such protections are provided by the service provider.</p>
+    <div class="callout">
+      <p><strong>Third-Party Model Isolation:</strong> Wissely selects AI providers that offer commercial privacy protections designed to limit the use of customer data for model training.</p>
+    </div>
+
+    <h2>3. Retention and Deletion</h2>
+    <p>We believe in managing data responsibly to prevent unnecessary storage exposure risks. Wissely follows a deliberate Data Minimization Protocol across our text translation nodes.</p>
+    <ul>
+      <li><strong>Temporary Extraction Cache:</strong> Uploaded texts processed during live analysis sequences are cleared from transient application memories after successful generation or standard request expiration windows.</li>
+      <li><strong>Account Invalidation:</strong> Should you choose to remove your platform profile via the user dashboard settings, your associated administrative logs, billing records, and configuration metadata are marked for routine database purge sequences within standard operational timeframes.</li>
+    </ul>
+
+    <h2>4. Secure Payment Processing</h2>
+    <p>Wissely does not directly handle, collect, or store full credit card numbers or sensitive payment token variables. Our payment infrastructure is operated using Paddle as our official Merchant of Record. All transaction inputs, subscription processing, and billing compliance measures are handled externally by Paddle in accordance with their respective industry security protocols.</p>
+
+    <h2>5. Security Vulnerabilities</h2>
+    <p>We continuously review our processing logic to protect user accounts. If you detect an apparent security vulnerability or unexpected performance behavior affecting data isolation layers, please contact our administrative team directly to ensure a prompt and responsible review.</p>
+    <p>Email: <a href="mailto:support@wissely.com" style="color:var(--sage); font-weight:500;">support@wissely.com</a></p>
+  </div>
+</main>
+
+<footer>
+  <div class="f-logo">Wisse<span>ly</span></div>
+  <div class="f-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="security.html">Data & Security</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="f-copy">© 2026 Wissely</div>
+</footer>
+
+</body>
+</html>
